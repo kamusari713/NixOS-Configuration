@@ -1,16 +1,21 @@
 {
   programs.nixvim.keymaps = [
-		# Mini Files
-    {
-      mode = "n";
-      key = "<leader>e";
-      action = "<cmd>lua MiniFiles.open()<CR>";
-    }
+    # Mini Files
+    # {
+    #   mode = "n";
+    #   key = "<leader>e";
+    #   action = "<cmd>lua MiniFiles.open()<CR>";
+    # }
     # Nvim neo tree
     {
       mode = "n";
-      key = "<leader>E";
+      key = "<leader><Tab>";
       action = "<cmd>Neotree<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle float<CR>";
     }
     # Telescope
     {

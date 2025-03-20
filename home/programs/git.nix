@@ -9,7 +9,7 @@
     userEmail = "ovsyannikovkostyan@gmail.com";
     aliases = {
       # Core commands
-      aa = "add .";
+      aa = "add --all";
       st = "status";
       l = "log";
       graph = "log --all --decorate --graph --oneline";
@@ -20,7 +20,7 @@
       c = "commit -m";
       ca = "commit -am";
       fuck = "commit --amend -v";
-      forgor = "commit --amend --no-edit";
+      pidor = "commit --amend --no-edit";
       unci = "reset --soft HEAD~1";
       # Remote repository actions
       essa = "push --force";
@@ -35,7 +35,6 @@
       # History and navigation
       hist = "log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all";
       llog = "log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative";
-
       # Utility and cleanup
       last = "log -1 HEAD";
       unadd = "reset HEAD";

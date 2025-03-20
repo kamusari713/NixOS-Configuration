@@ -41,7 +41,7 @@ in
       };
 
       initExtra = ''
-        fastfetch
+        fastfetch logo ~/.wallpapers/trollface.png
       '';
     };
   };

@@ -31,7 +31,7 @@
       nixvim.enable = false;
       hyprland.enable = false;
     };
-    image = ../../wallpapers/girl-outline.png;
+    image = ./girl-outline.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     cursor = {
       package = pkgs.bibata-cursors;
@@ -58,6 +58,8 @@
 
       sizes = {
         terminal = 13;
+				popups = 11;
+				desktop = 11;
         applications = 11;
       };
     };
