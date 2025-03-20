@@ -7,7 +7,7 @@
     ./lualine.nix
     ./mini.nix
     ./neo-ls.nix
-    # ./neo-tree.nix
+    ./neo-tree.nix
     ./telescope.nix
     ./treesitter.nix
     ./ts-autotag.nix
