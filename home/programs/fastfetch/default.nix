@@ -6,7 +6,7 @@
       logo = {
         type = "kitty-direct";
         source = "nixos.png";
-        width = 16;
+        width = 40;
         height = 16;
       };
       display = {
