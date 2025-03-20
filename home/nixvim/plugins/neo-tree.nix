@@ -12,6 +12,10 @@
     window = {
       position = "float";
       width = 30;
+      mappings = {
+        "h" = "close_node";
+        "l" = "open";
+      };
     };
 
     defaultComponentConfigs = {

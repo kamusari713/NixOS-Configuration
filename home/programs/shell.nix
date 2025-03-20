@@ -29,8 +29,7 @@ in
         hms = "home-manager switch --flake ${flakeDir} --impure";
         ngc = "sudo nix-collect-garbage -d";
 
-        df = "sudo rsync -avP --include=\".*\" ~/nixos-config/dotfiles/common/ ~/";
-        dfl = "sudo rsync -avP --include=\".*\" ~/nixos-config/dotfiles/laptop/ ~/";
+				nv = "nvim";
 
         cls = "clear";
         ls = "ls -lh";

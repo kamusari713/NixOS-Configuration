@@ -44,19 +44,19 @@
     {
       mode = "n";
       key = "<leader>fb";
-      action = "<cmd>lua require('telescope.builtin').git_branches()<CR>";
+      action = "<cmd>Telescope git_branches<CR>";
       options.desc = "Git branches";
     }
     {
       mode = "n";
       key = "<leader>gss";
-      action = "<cmd>lua require('telescope.builtin').git_status()<CR>";
+      action = "<cmd>Telescope git_status<CR>";
       options.desc = "Git status";
     }
     {
       mode = "n";
       key = "<leader>gs";
-      action = "<cmd>lua require('telescope.builtin').git_stash()<CR>";
+      action = "<cmd>Telescope git_stash<CR>";
       options.desc = "Git stash";
     }
 
