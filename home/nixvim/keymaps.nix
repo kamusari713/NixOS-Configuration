@@ -1,119 +1,185 @@
 {
   programs.nixvim.keymaps = [
-    # Mini Files
-    # {
-    #   mode = "n";
-    #   key = "<leader>e";
-    #   action = "<cmd>lua MiniFiles.open()<CR>";
-    # }
     # Nvim neo tree
-    {
-      mode = "n";
-      key = "<leader><Tab>";
-      action = "<cmd>Neotree<CR>";
-    }
     {
       mode = "n";
       key = "<leader>e";
       action = "<cmd>Neotree toggle float<CR>";
+      options.desc = "Open Nvim-Neo-Tree";
     }
+
     # Telescope
     {
       mode = "n";
       key = "<leader>fd";
       action = "<cmd>Telescope live_grep<CR>";
+      options.desc = "Live grep files";
     }
     {
       mode = "n";
       key = "<leader>ff";
       action = "<cmd>Telescope find_files<CR>";
+      options.desc = "Find files";
     }
+    {
+      mode = "n";
+      key = "<leader>fo";
+      action = "<cmd>Telescope buffers<CR>";
+      options.desc = "Buffers";
+    }
+    {
+      mode = "n";
+      key = "<leader>fr";
+      action = "<cmd>Telescope oldfiles<CR>";
+      options.desc = "Open Recent File";
+    }
+
+    # Telescope Git
     {
       mode = "n";
       key = "<leader>fg";
       action = "<cmd>Telescope git_commits<CR>";
+      options.desc = "Buffers";
     }
-    # Lazygit
     {
       mode = "n";
-      key = "<leader>gg";
-      action = "<cmd>LazyGit<CR>";
+      key = "<leader>fb";
+      action = "<cmd>lua require('telescope.builtin').git_branches()<CR>";
+      options.desc = "Git branches";
     }
-    # Commentary bindings
     {
       mode = "n";
-      key = "<leader>/";
-      action = "<cmd>Commentary<CR>";
+      key = "<leader>gss";
+      action = "<cmd>lua require('telescope.builtin').git_status()<CR>";
+      options.desc = "Git status";
     }
+    {
+      mode = "n";
+      key = "<leader>gs";
+      action = "<cmd>lua require('telescope.builtin').git_stash()<CR>";
+      options.desc = "Git stash";
+    }
+
     # Utility
     {
       mode = "n";
       key = "<leader>o";
       action = "o<Esc>k";
+      options.desc = "Buffers";
     }
     {
       mode = "n";
       key = "<leader>O";
       action = "O<Esc>j";
+      options.desc = "Buffers";
     }
     {
       mode = "n";
       key = "<leader>s";
       action = "<cmd>w<CR>";
+      options.desc = "Buffers";
     }
     {
       mode = "n";
       key = "<leader>a";
       action = "ggVG";
-    }
-    # Bufferline
-    {
-      mode = "n";
-      key = "<S-l>";
-      action = "<cmd>BufferLineCycleNext<cr>";
-      options = {
-        desc = "Cycle to next buffer";
-      };
+      options.desc = "Buffers";
     }
     {
       mode = "n";
-      key = "<S-h>";
-      action = "<cmd>BufferLineCyclePrev<cr>";
-      options = {
-        desc = "Cycle to previous buffer";
-      };
+      key = "<C-d>";
+      action = "<C-d>zz";
+      options.desc = "Set cursor in center";
     }
     {
       mode = "n";
-      key = "<leader>wk";
-      action = "<cmd>bdelete<cr>";
-      options = {
-        desc = "Delete buffer";
-      };
+      key = "<C-u>";
+      action = "<C-u>zz";
+      options.desc = "Set cursor in center";
+    }
+    {
+      mode = "v";
+      key = "J";
+      action = ":m '>+1<CR>gv=gv";
+      options.desc = "Move lines in Visual mode";
+    }
+    {
+      mode = "v";
+      key = "K";
+      action = ":m '<-2<CR>gv=gv";
+      options.desc = "Move lines in Visual mode";
     }
     {
       mode = "n";
-      key = "<leader>wo";
-      action = "<cmd>BufferLineCloseOthers<cr>";
-      options = {
-        desc = "Delete other buffers";
-      };
+      key = "n";
+      action = "nzz";
+      options.desc = "Set cursor in the center";
     }
     {
       mode = "n";
-      key = "<leader>wp";
-      action = "<cmd>BufferLineTogglePin<cr>";
-      options = {
-        desc = "Toggle pin";
-      };
+      key = "N";
+      action = "Nzzv";
+      options.desc = "Set cursor in the center";
     }
     {
       mode = "n";
-      key = "<leader>wP";
-      action = "<Cmd>BufferLineGroupClose ungrouped<CR>";
-      options = {
-        desc = "Delete non-pinned buffers";
-      };
+      key = "*";
+      action = "*zzv";
+      options.desc = "Set cursor in the center";
+    }
+    {
+      mode = "n";
+      key = "#";
+      action = "#zzv";
+      options.desc = "Set cursor in the center";
+    }
+    {
+      mode = "n";
+      key = "g*";
+      action = "g*zz";
+      options.desc = "Set cursor in the center";
+    }
+    {
+      mode = "n";
+      key = "g#";
+      action = "g#zz";
+      options.desc = "Set cursor in the center";
+    }
+    {
+      mode = "v";
+      key = "<";
+      action = "<gv";
+      options.desc = "Moving line in Visual mode";
+    }
+    {
+      mode = "v";
+      key = ">";
+      action = ">gv";
+      options.desc = "Moving line in Visual mode";
+    }
+    {
+      mode = "v";
+      key = "p";
+      action = "\"_dp";
+      options.desc = "Paste without saving in Visual mod";
+    }
+    {
+      mode = "v";
+      key = "P";
+      action = "\"_dP";
+      options.desc = "Paste without saving in Visual mode";
+    }
+    {
+      mode = [ "n" "x" "o" ];
+      key = "H";
+      action = "^";
+      options.desc = "Go to start of the line";
+    }
+    {
+      mode = [ "n" "x" "o" ];
+      key = "L";
+      action = "g_";
+      options.desc = "Go to end of the line";
     }
   ];
 }

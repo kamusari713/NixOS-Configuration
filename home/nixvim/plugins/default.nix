@@ -1,6 +1,5 @@
 {
   imports = [
-    # ./bufferline.nix
     ./cmp.nix
     ./colorizer.nix
     ./lsp.nix
