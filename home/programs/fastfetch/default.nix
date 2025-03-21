@@ -2,82 +2,125 @@
   programs.fastfetch = {
     enable = true;
     settings = {
-      schema = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
       logo = {
         type = "kitty-direct";
-        source = "nixos.png";
+        source = "~/.wallpapers/trollface.png";
         width = 40;
         height = 16;
       };
       display = {
-        separator = " ";
+        separator = " ➜  ";
       };
       modules = [
         {
-          type = "custom"; # HardwareStart
-          format = "┌─────────── Hardware Information ───────────┐"; # `\u001b` is `\033`, or `\e`
-        }
-        {
-          type = "cpu";
-          key = "  ";
-        }
-        {
-          type = "gpu";
-          key = "  ";
-        }
-        {
-          type = "memory";
-          key = "  󰑭";
-        }
-        {
-          type = "swap";
-          key = "  󰓡";
-        }
-        {
-          type = "battery";
-          key = "  ";
-        }
-        {
-          type = "custom"; # SoftwareStart
-          format = "├─────────── Software Information ───────────┤";
-        }
-        {
-          type = "title";
-          key = "  ";
-          format = "{2}";
+          type = "break";
         }
         {
           type = "os";
-          key = "  "; # Just get your distro's logo off nerdfonts.com
+          key = "OS   ";
+          keyColor = "white";
         }
         {
-          type = "wm";
-          key = "  ";
-        }
-        {
-          type = "terminal";
-          key = "  ";
-        }
-        {
-          type = "terminalfont";
-          key = "  ";
+          type = "kernel";
+          key = " ├  ";
+          keyColor = "white";
         }
         {
           type = "packages";
-          key = "  󰏖";
+          format = "{} (nixpkgs)";
+          key = " ├ 󰏖 ";
+          keyColor = "white";
         }
         {
-          type = "uptime";
-          key = "  󰅐";
+          type = "shell";
+          key = " └  ";
+          keyColor = "white";
         }
         {
-          type = "custom"; # InformationEnd
-          format = "└────────────────────────────────────────────┘";
+          type = "break";
+        }
+        {
+          type = "wm";
+          key = "WM   ";
+          keyColor = "blue";
+        }
+        {
+          type = "wmtheme";
+          key = " ├ 󰉼 ";
+          keyColor = "blue";
+        }
+        {
+          type = "icons";
+          key = " ├ 󰀻 ";
+          keyColor = "blue";
+        }
+        {
+          type = "cursor";
+          key = " ├  ";
+          keyColor = "blue";
+        }
+        {
+          type = "terminal";
+          key = " ├  ";
+          keyColor = "blue";
+        }
+        {
+          type = "terminalfont";
+          key = " └  ";
+          keyColor = "blue";
+        }
+        {
+          type = "break";
+        }
+        {
+          type = "board";
+          key = "PC   ";
+          keyColor = "red";
+        }
+        {
+          type = "cpu";
+          format = "{1} ({3}) @ {7} GHz";
+          key = " ├  ";
+          keyColor = "red";
+        }
+        {
+          type = "gpu";
+          format = "{1} {2} @ {12} GHz";
+          key = " ├ 󰢮 ";
+          keyColor = "red";
+        }
+        {
+          type = "memory";
+          key = " ├  ";
+          keyColor = "red";
+        }
+        {
+          type = "swap";
+          key = " ├ 󰓡 ";
+          keyColor = "red";
+        }
+        {
+          type = "disk";
+          key = " ├ 󰋊 ";
+          keyColor = "red";
+        }
+        {
+          type = "monitor";
+          key = " └  ";
+          keyColor = "red";
+        }
+        {
+          type = "break";
         }
         {
           type = "colors";
-          paddingLeft = 2;
-          symbol = "circle";
+          paddingLeft = 4;
+        }
+        {
+          type = "break";
+        }
+        {
+          type = "break";
         }
       ];
     };
