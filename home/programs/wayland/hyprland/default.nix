@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   imports = [
     ./env.nix
-    ./hyprpaper.nix
     ./input.nix
     ./keybindings.nix
     ./launch.nix
@@ -24,7 +23,6 @@
     brightnessctl
 
     hyprgraphics
-    hyprpaper
     hyprshot
   ];
 
