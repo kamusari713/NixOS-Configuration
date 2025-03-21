@@ -18,6 +18,7 @@
     qt6ct
 
     cliphist
+    wl-color-picker
     wl-clipboard
     dconf
     brightnessctl

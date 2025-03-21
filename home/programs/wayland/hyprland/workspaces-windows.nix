@@ -11,8 +11,13 @@
       ];
 
       windowrulev2 = [
-        # Chrome
+        # Browser
         "workspace 1, class:(vivaldi)$"
+
+				# Spotify
+				"float, class:(spotify)"
+				"center, class:(spotify)"
+				"size, 1000 700, class:(spotify)"
 
         # Prism Launcher
         "workspace 3, class:(PrismLauncher)$"

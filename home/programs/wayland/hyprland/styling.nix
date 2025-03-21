@@ -32,11 +32,13 @@
 
       # General settings
       general = {
-        gaps_in = 0;
-        gaps_out = 0;
-        border_size = 0;
+        gaps_in = 2;
+        gaps_out = 2;
         resize_on_border = false;
         layout = "dwindle";
+        border_size = 4;
+        "col.active_border" = "rgb(D5C4A1)";
+        "col.inactive_border" = "rgb(D5C4A1)";
       };
 
       # Animations
