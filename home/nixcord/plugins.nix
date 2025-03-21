@@ -14,6 +14,8 @@
 
     fakeNitro.enable = true;
 
+    fixSpotifyEmbeds.enable = true;
+
     gameActivityToggle.enable = true;
 
     memberCount.enable = true;
@@ -38,6 +40,8 @@
     showHiddenThings.enable = true;
 
     silentMessageToggle.enable = true;
+
+    spotifyControls.enable = true;
 
     webScreenShareFixes.enable = true;
   };

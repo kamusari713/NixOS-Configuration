@@ -1,6 +1,8 @@
 {
   imports = [
+    ./stylix
+
     ./gtk.nix
-    ./stylix.nix
+    ./spicetify.nix
   ];
 }
