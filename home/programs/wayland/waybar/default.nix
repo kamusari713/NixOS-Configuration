@@ -20,7 +20,6 @@
           # "network"
           # "battery"
           "custom/weather"
-          "pulseaudio"
           "hyprland/language"
           "clock"
           "tray"
@@ -39,9 +38,8 @@
         };
 
         "hyprland/language" = {
-          format-en = "en 💩";
-          format-ru = "RU 🦾";
-          min-length = 5;
+          format-en = "en";
+          format-ru = "RU";
           tooltip = false;
         };
 
@@ -105,7 +103,7 @@
 
         clock = {
           format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
+          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
       }
     ];

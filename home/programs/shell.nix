@@ -30,6 +30,7 @@ in
         ngc = "sudo nix-collect-garbage -d";
 
 				nv = "nvim";
+				nixdev = "nix develop ~/nixos-config";
 
         cls = "clear";
         ls = "ls -lh";

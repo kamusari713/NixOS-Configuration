@@ -1,122 +1,87 @@
-/* #1d2021 */
-/* #282828 */
-/* #32302f */
-/* #3c3836 */
-/* #504945 */
-/* #665c54 */
-/* #7c6f64 */
-/* #928374 */
-/* #a89984 */
-/* #bdae93 */
-/* #d5c4a1 */
-/* #f2e5bc */
-/* #ebdbb2 */
-/* #fbf1c7 */
-/* #f9f5d7 */
 /* #9d0006 */
-/* #cc241d */
-/* #fb4934 */
-/* #af3a03 */
-/* #d65d0e */
-/* #fe8019 */
-/* #b57614 */
-/* #d79921 */
-/* #fabd2f */
-/* #79740e */
-/* #98971a */
-/* #b8bb26 */
-/* #427b58 */
-/* #689d6a */
-/* #8ec07c */
-/* #076678 */
-/* #458588 */
-/* #83a598 */
-/* #8f3f71 */
-/* #b16286 */
+/* #b94306 */
+/* #e3a526 */
+/* #85a03b */
+/* #277680 */
+/* #8f4373 */
 /* #d3869b */
 
 * {
-	border: none;
-	border-radius: 0px;
-	min-height: 0;
-	min-width: 0;
-	font-family: "JetBrainsMono";
-	font-size: 16px;
-	font-weight: 800;
+  border: none;
+  border-radius: 0px;
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono";
+  font-size: 16px;
+  font-weight: 800;
 }
 
 window#waybar {
-	transition-property: background-color;
-	transition-duration: 0.5s;
-	background-color: #32302f;
+  background-color: #282828;
+  border-bottom: 5px solid #d5c4a1;
 }
 
 #workspaces button {
-	padding-left: 0.4rem;
-	padding-right: 0.4rem;
-	color: #bdae93;
-}
-
-#workspaces button:hover {
-	color: #32302f;
-	background-color: #bdae93;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  color: #b8bb26;
+  border-bottom: 7px solid #b8bb26;
 }
 
 #workspaces button.active {
-	color: #32302f;
-	background-color: #b8bb26;
+  color: #282828;
+  background-color: #b8bb26;
+}
+
+#workspaces button:hover {
+  color: #282828;
+  background-color: #b8bb26;
 }
 
 #window,
 #network,
 #battery,
 #weather,
-#pulseaudio,
 #language,
 #clock,
 #tray {
-	margin: 0;
-	padding-left: 0.4rem;
-	padding-right: 0.4rem;
-	border-radius: 0;
+  margin: 0;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  border-radius: 0;
 }
 
 #window {
-	color: #bdae93;
-	border-bottom: 5px solid #bdae93;
+  color: #d3869b;
+  border-bottom: 7px solid #d3869b;
 }
 
 #network {
-	color: #cc241d;
-	border-bottom: 5px solid #cc241d;
+  color: #9d0006;
+  border-bottom: 7px solid #9d0006;
 }
 
 #battery {
-	color: #076678;
-	border-bottom: 5px solid #076678;
+  color: #b94306;
+  border-bottom: 7px solid #b94306;
 }
 
 #custom-weather {
-	color: #fbf1c7;
-	border-bottom: 5px solid #fbf1c7;
-}
-
-#pulseaudio {
-	color: #fabd2f;
-	border-bottom: 5px solid #fabd2f;
+  color: #e3a526;
+  border-bottom: 7px solid #e3a526;
 }
 
 #language {
-	color: #d65d0e;
-	border-bottom: 5px solid #d65d0e;
+  color: #85a03b;
+  border-bottom: 7px solid #85a03b;
 }
 
 #clock {
-	color: #8ec07c;
-	border-bottom: 5px solid #8ec07c;
+  color: #277680;
+  border-bottom: 7px solid #277680;
 }
 
 #tray {
-	color: #d3869b;
-	border-bottom: 5px solid #d3869b;
+  color: #8f4373;
+  border-bottom: 7px solid #8f4373;
 }
