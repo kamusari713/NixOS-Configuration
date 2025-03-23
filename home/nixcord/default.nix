@@ -7,7 +7,8 @@
   ];
 
   programs.nixcord = {
-    enable = true;
+		enable = true;
+		discord.enable = false;
     vesktop.enable = true;
 
     config = {
