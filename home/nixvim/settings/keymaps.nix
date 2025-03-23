@@ -3,8 +3,14 @@
     # Nvim neo tree
     {
       mode = "n";
-      key = "<leader>e";
+      key = "<leader>ef";
       action = "<cmd>Neotree toggle float<CR>";
+      options.desc = "Open Nvim-Neo-Tree";
+    }
+    {
+      mode = "n";
+      key = "<leader>er";
+      action = "<cmd>Neotree toggle position=right<CR>";
       options.desc = "Open Nvim-Neo-Tree";
     }
 
@@ -118,19 +124,19 @@
     {
       mode = "n";
       key = "N";
-      action = "Nzzv";
+      action = "Nzz";
       options.desc = "Set cursor in the center";
     }
     {
       mode = "n";
       key = "*";
-      action = "*zzv";
+      action = "*zz";
       options.desc = "Set cursor in the center";
     }
     {
       mode = "n";
       key = "#";
-      action = "#zzv";
+      action = "#zz";
       options.desc = "Set cursor in the center";
     }
     {
@@ -148,13 +154,13 @@
     {
       mode = "v";
       key = "<";
-      action = "<gv";
+      action = "<g";
       options.desc = "Moving line in Visual mode";
     }
     {
       mode = "v";
       key = ">";
-      action = ">gv";
+      action = ">g";
       options.desc = "Moving line in Visual mode";
     }
     {

@@ -3,8 +3,10 @@
     inputs.nixvim.homeManagerModules.nixvim
 
     ./plugins
-
-    ./common.nix
-    ./keymaps.nix
+    ./settings
   ];
+
+  programs.nixvim = {
+    enable = true;
+  };
 }

@@ -29,8 +29,6 @@ in
         hms = "home-manager switch --flake ${flakeDir} --impure";
         ngc = "sudo nix-collect-garbage -d";
 
-				nv = "nvim";
-
         cls = "clear";
         ls = "ls -lh";
 
