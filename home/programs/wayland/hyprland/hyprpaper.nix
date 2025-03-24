@@ -3,18 +3,15 @@
     enable = true;
 
     settings = {
-      ipc = "on";
+      ipc = "off";
       splash = false;
-      splash_offset = 2.0;
 
       preload = [
-        "~/.wallpapers/Kurumi-Ebisuzawa.png"
-        "~/.wallpapers/gruvbox-rainbow-nix.png"
+        "~/.wallpapers/roronoa-zoro-gruvbox.jpg"
       ];
 
       wallpaper = [
-        "DP-1, ~/.wallpapers/girl.png"
-        "HDMI-A-1, ~/.wallpapers/girl.png"
+        "HDMI-A-1, ~/.wallpapers/roronoa-zoro-gruvbox.jpg"
       ];
     };
   };

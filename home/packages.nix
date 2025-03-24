@@ -6,8 +6,8 @@
     prismlauncher
     telegram-desktop
 
-		# Utility
-		lutgen
+    # Utility
+    lutgen
 
     # LibreOffice
     libreoffice-qt

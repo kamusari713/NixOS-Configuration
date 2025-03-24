@@ -106,6 +106,7 @@
         }
         {
           type = "monitor";
+          format = "{2}x{3}px {6}\" {11}GHz";
           key = " └  ";
           keyColor = "red";
         }

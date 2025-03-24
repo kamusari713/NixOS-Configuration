@@ -11,7 +11,6 @@
     ./mini.nix
     ./neo-ls.nix
     ./neo-tree.nix
-		./rainbow-delimiters.nix
     ./telescope.nix
     ./treesitter.nix
     ./ts-autotag.nix
