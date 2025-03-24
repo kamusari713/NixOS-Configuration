@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ./env.nix
-		./hyprpaper.nix
+    ./hyprpaper.nix
     ./input.nix
     ./keybindings.nix
     ./launch.nix
@@ -25,7 +25,7 @@
 
     hyprgraphics
     hyprshot
-		hyprpaper
+    hyprpaper
   ];
 
   wayland.windowManager.hyprland = {

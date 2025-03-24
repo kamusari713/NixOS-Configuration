@@ -2,10 +2,10 @@
   wayland.windowManager.hyprland = {
     settings = {
       workspace = [
-        "5, monitor:DP-1"
-        "4, monitor:DP-1"
-        "3, monitor:DP-1"
-        "1, monitor:DP-1"
+        "5, monitor:HDMI-A-1"
+        "4, monitor:HDMI-A-1"
+        "3, monitor:HDMI-A-1"
+        "1, monitor:HDMI-A-1"
         "6, monitor:HDMI-A-1"
         "10, monitor:HDMI-A-1"
       ];
@@ -14,10 +14,10 @@
         # Browser
         "workspace 1, class:(vivaldi)$"
 
-				# Spotify
-				"float, class:(spotify)"
-				"center, class:(spotify)"
-				"size, 1000 700, class:(spotify)"
+        # Spotify
+        "float, class:(spotify)"
+        "center, class:(spotify)"
+        "size, 1000 700, class:(spotify)"
 
         # Prism Launcher
         "workspace 3, class:(PrismLauncher)$"

@@ -10,4 +10,10 @@
       package = pkgs.gruvbox-dark-gtk;
     };
   };
+
+  qt = {
+    enable = true;
+		platformTheme.name = "gtk";
+		style.name = "gtk2";
+  };
 }

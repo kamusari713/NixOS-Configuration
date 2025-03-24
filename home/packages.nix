@@ -6,6 +6,9 @@
     prismlauncher
     telegram-desktop
 
+		# Utility
+		lutgen
+
     # LibreOffice
     libreoffice-qt
     hunspell

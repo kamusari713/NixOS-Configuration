@@ -27,7 +27,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
-          inputs.stylix.nixosModules.stylix
+          inputs.stylix.homeManagerModules.stylix
           ./home
         ];
       };
