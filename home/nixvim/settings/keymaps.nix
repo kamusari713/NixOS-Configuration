@@ -93,13 +93,13 @@
     }
     {
       mode = "n";
-      key = "<C-d>";
+      key = "<C-J>";
       action = "<C-d>zz";
       options.desc = "Set cursor in center";
     }
     {
       mode = "n";
-      key = "<C-u>";
+      key = "<C-k>";
       action = "<C-u>zz";
       options.desc = "Set cursor in center";
     }

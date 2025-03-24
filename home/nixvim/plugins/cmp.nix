@@ -44,14 +44,18 @@
             name = "nvim_lsp";
             priority = 100;
           }
-          {
-            name = "nvim_lsp_signature_help";
-            priority = 100;
-          }
-          {
-            name = "nvim_lsp_document_symbol";
-            priority = 100;
-          }
+					{
+						name = "emmet";
+						priority = 100;
+					}
+          # {
+          #   name = "nvim_lsp_signature_help";
+          #   priority = 100;
+          # }
+          # {
+          #   name = "nvim_lsp_document_symbol";
+          #   priority = 100;
+          # }
           {
             name = "treesitter";
             priority = 80;
@@ -99,28 +103,6 @@
         experimental.ghost_text = true;
 
         mapping = {
-          "<Tab>".__raw = ''
-            cmp.mapping(function(fallback)
-              local luasnip = require("luasnip")
-              if luasnip.locally_jumpable(1) then
-                luasnip.jump(1)
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
-
-          "<S-Tab>".__raw = ''
-            cmp.mapping(function(fallback)
-              local luasnip = require("luasnip")
-              if luasnip.jumpable(-1) then
-                luasnip.jump(-1)
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
-
           "<C-n>" =
             # lua
             "cmp.mapping(cmp.mapping.select_next_item())";
@@ -135,17 +117,14 @@
             "cmp.mapping.scroll_docs(-4)";
           "<C-f>" =
             # lua
-            "cmp.mapping.scroll_docs(4)";
-          "<Up>" =
-            # lua
             "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<Down>" =
+          "<S-Tab>" =
             # lua
             "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-          "<CR>" =
+          "<Tab>" =
             # lua
             "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
-          "<C-Space>" =
+          "<C-Tab>" =
             # lua
             "cmp.mapping.complete()";
         };

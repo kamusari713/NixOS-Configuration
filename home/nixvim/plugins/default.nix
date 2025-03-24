@@ -2,6 +2,7 @@
   imports = [
     ./cmp.nix
     ./colorizer.nix
+		./emmet.nix
 		./fidget.nix
 		./indent-blankline.nix
     ./lsp.nix
