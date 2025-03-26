@@ -45,7 +45,7 @@
         "center, class:(TelegramDesktop)$, title:(Save File)$"
 
         # Vesktop
-        "workspace 10 silent, class:(vesktop)$"
+        "workspace 5 silent, class:(vesktop)$"
         "float, class:(vesktop)$, title:(Open Files)$"
         "size 1160 630, class:(vesktop)$, title:(Open Files)$"
         "center, class:(vesktop)$, title:(Open Files)$"
