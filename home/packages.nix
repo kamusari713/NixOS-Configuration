@@ -6,9 +6,6 @@
     prismlauncher
     telegram-desktop
 
-    # Utility
-    lutgen
-
     # LibreOffice
     libreoffice-qt
     hunspell
@@ -17,7 +14,6 @@
     # Workflow
     jdk21
     maven
-    sdkmanager
 
     mongosh
     mongodb-tools
@@ -25,7 +21,7 @@
     nodejs_23
 
     # Shit
-    jetbrains.idea-community
+    vscode
     pgmodeler
   ];
 }

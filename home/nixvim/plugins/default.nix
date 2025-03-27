@@ -9,7 +9,6 @@
     ./lint.nix
     ./lsp.nix
     ./lualine.nix
-    ./luasnip.nix
     ./mini.nix
     ./neo-ls.nix
     ./neo-tree.nix

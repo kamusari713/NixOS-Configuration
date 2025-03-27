@@ -87,19 +87,21 @@
     }
     {
       mode = "n";
-      key = "<leader>a";
+      key = "<leader>A";
       action = "ggVG";
       options.desc = "Buffers";
     }
+
+    # Better navigation
     {
       mode = "n";
-      key = "<C-J>";
+      key = "<C-d>";
       action = "<C-d>zz";
       options.desc = "Set cursor in center";
     }
     {
       mode = "n";
-      key = "<C-k>";
+      key = "<C-u>";
       action = "<C-u>zz";
       options.desc = "Set cursor in center";
     }
