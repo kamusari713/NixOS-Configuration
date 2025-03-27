@@ -1,13 +1,15 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./cmp.nix
     ./colorizer.nix
-		./emmet.nix
-		./fidget.nix
-		./indent-blankline.nix
+    ./conform-nvim.nix
+    ./emmet.nix
+    ./fidget.nix
+    ./indent-blankline.nix
+    ./lint.nix
     ./lsp.nix
     ./lualine.nix
-		./luasnip.nix
+    ./luasnip.nix
     ./mini.nix
     ./neo-ls.nix
     ./neo-tree.nix
@@ -19,6 +21,8 @@
 
   programs.nixvim.plugins = {
     commentary.enable = true;
+
+    java.enable = true;
 
     nvim-autopairs.enable = true;
 

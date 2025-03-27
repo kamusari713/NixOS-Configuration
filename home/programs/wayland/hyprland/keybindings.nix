@@ -15,7 +15,7 @@
         "$mainMod CTRL, R, exec, reboot"
 
         "$mainMod, SPACE, exec, rofi -show drun"
-        "$mainMod SHIFT, S, exec, hyprshot -m region --clipboard-only"
+        "$mainMod SHIFT, S, exec, hyprshot -m region --clipboard-only -z"
         "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
 
         "$mainMod, F, togglefloating"
