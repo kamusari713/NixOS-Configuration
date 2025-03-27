@@ -5,6 +5,7 @@
     ./keyd.nix
     ./sound.nix
     ./xserver.nix
+    ./zerotier.nix
   ];
   services = {
     openssh.enable = true;

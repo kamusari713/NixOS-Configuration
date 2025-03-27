@@ -51,8 +51,9 @@
         "center, class:(vesktop)$, title:(Open Files)$"
 
         # AmneziaVPN
-        "workspace 10 silent, title:(AmneziaVPN)$"
+        "workspace 5 silent, title:(AmneziaVPN)$"
         "float, title:(AmneziaVPN)$"
+        "center, class:(AmneziaVPN)"
 
         # Pavucontrol
         "float, class:(org.pulseaudio.pavucontrol)$"
