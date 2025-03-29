@@ -68,6 +68,15 @@
 
     # Utility
     {
+      key = "<esc>";
+      action = ":noh<CR>";
+      mode = "n";
+      options = {
+        silent = true;
+        desc = "Clear search";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>o";
       action = "o<Esc>k";

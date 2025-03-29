@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{
   imports = [
     ./cmp.nix
     ./colorizer.nix
@@ -6,33 +6,40 @@
     ./emmet.nix
     ./fidget.nix
     ./indent-blankline.nix
-    ./lint.nix
+    ./java.nix
+    # ./lint.nix
     ./lsp.nix
     ./lualine.nix
     ./mini.nix
-    ./neo-ls.nix
     ./neo-tree.nix
+    ./none-ls.nix
     ./telescope.nix
     ./treesitter.nix
     ./ts-autotag.nix
     ./visual-multi.nix
   ];
 
-  programs.nixvim.plugins = {
-    commentary.enable = true;
+  programs.nixvim = {
+    plugins = {
+      commentary.enable = true;
 
-    java.enable = true;
+      nvim-autopairs.enable = true;
 
-    nvim-autopairs.enable = true;
+      noice.enable = true;
+      noice.settings.presets."inc_rename" = true;
+      inc-rename.enable = true; # Nice renaming UI
 
-    tailwind-tools.enable = true;
+      vim-surround.enable = true;
 
-    transparent.enable = true;
+      tailwind-tools.enable = true;
 
-    vim-be-good.enable = true;
+      transparent.enable = true;
 
-    wakatime.enable = true;
+      vim-be-good.enable = true;
 
-    web-devicons.enable = true;
+      wakatime.enable = true;
+
+      web-devicons.enable = true;
+    };
   };
 }

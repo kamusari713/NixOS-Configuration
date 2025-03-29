@@ -1,7 +1,5 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [
-    lazygit
-  ];
+  home.packages = with pkgs; [ lazygit ];
 
   programs.git = {
     enable = true;
@@ -29,12 +27,15 @@
       # Rebase, diffs, and fixing mistakes
       r = "rebase";
       d = "diff";
-      df = "!git hist | peco | awk '{print $2}' | xargs -I {} git diff {}^ {}";
+      df = "!git hist | fzf | awk '{print $2}' | xargs -I {} git diff {}^ {}";
       oops = "checkout --";
-      edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; hx `f`";
+      edit-unmerged =
+        "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; hx `f`";
       # History and navigation
-      hist = "log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all";
-      llog = "log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative";
+      hist =
+        "log --pretty=format:'%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)' --graph --date=relative --decorate --all";
+      llog =
+        "log --graph --name-status --pretty=format:'%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset' --date=relative";
       # Utility and cleanup
       last = "log -1 HEAD";
       unadd = "reset HEAD";

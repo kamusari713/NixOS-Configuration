@@ -57,8 +57,8 @@
           "<C-f>" = "cmp.mapping.scroll_docs(1)";
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-e>" = "cmp.mapping.abort()";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
-
+          "<C-Esc>" = "cmp.mapping.close()";
+          "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
           "<Tab>" = ''
             function(fallback)
               if cmp.visible() then
@@ -74,7 +74,6 @@
               end
             end
           '';
-
           "<S-Tab>" = ''
             function(fallback)
               if cmp.visible() then
@@ -108,7 +107,7 @@
         };
 
         sources = [
-          { name = "copilot"; }
+          # { name = "copilot"; }
           {
             name = "nvim_lsp";
             entry_filter.__raw = ''
@@ -128,8 +127,6 @@
           { name = "calc"; }
           { name = "emoji"; }
           { name = "treesitter"; }
-          { name = "crates"; }
-          { name = "tmux"; }
         ];
 
         window = {

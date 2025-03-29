@@ -2,26 +2,19 @@
   programs.nixvim.plugins = {
     lsp = {
       enable = true;
-
       servers = {
         nil_ls.enable = true; # Nix
-
         ts_ls = {
           enable = true; # TS
           filetypes = [ "typescript" "typescriptreact" "typescript.tsx" ];
         };
-
         cssls.enable = true; # CSS
-
         tailwindcss.enable = true; # TailwindCSS
-
         html.enable = true; # HTML
-
         emmet_ls = {
           enable = true;
-          filetypes = [ "html" "css" "scss" "javascript" "javascriptreact" "typescript" "typescriptreact" "svelte" "vue" ];
+          filetypes = [ "html" "css" "scss" "javascript" "javascriptreact" "typescript" "typescriptreact" "vue" ];
         };
-
         volar = {
           enable = true; # Vue
           # volar formatter indent is broken, so we disable it in favor of prettier
@@ -33,35 +26,22 @@
           '';
           onAttach.override = true;
         };
-
         dockerls.enable = true; # Docker
-
         bashls.enable = true; # Bash
-
         pyright.enable = true; # Python
-
         marksman.enable = true; # Markdown
-
         gopls.enable = true; # Go
-
-        # graphql.enable = true; # GraphQL
-
         jsonls.enable = true; # JSON
-
-        java_language_server.enable = true;
-
-        kotlin_language_server.enable = true; # Kotlin
+        # java_language_server.enable = true; # Java
+        # kotlin_language_server.enable = true; # Kotlin
       };
-
       keymaps = {
         silent = true;
-
         diagnostic = {
           # Navigate in diagnostics
           "<leader>k" = "goto_prev";
           "<leader>j" = "goto_next";
         };
-
         lspBuf = {
           gd = "definition";
           gD = "references";
@@ -72,18 +52,14 @@
         };
       };
     };
-
     lsp-format = {
       enable = true;
     };
-
     lsp-status = {
       enable = true;
     };
-
     lspkind = {
       enable = true;
-
       cmp.menu = {
         nvim_lsp = "";
         nvim_lua = "";
@@ -92,13 +68,11 @@
         calc = "";
         git = "";
         luasnip = "󰩫";
-        # codeium = "󱜙";
         copilot = "";
         emoji = "󰞅";
         path = "";
         spell = "";
       };
-
       symbolMap = {
         Namespace = "󰌗";
         Text = "󰊄";
@@ -137,11 +111,7 @@
         Calendar = "";
         Watch = "󰥔";
         Package = "";
-        Copilot = "";
-        # Codeium = "";
-        TabNine = "";
       };
-
       extraOptions = {
         maxwidth = 50;
         ellipsis_char = "...";

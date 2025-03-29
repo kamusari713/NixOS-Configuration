@@ -1,13 +1,10 @@
 {
   programs.nixvim = {
     defaultEditor = true;
-
     luaLoader.enable = true;
-
     globals = {
       mapleader = " ";
     };
-
     opts = {
       # Tabs
       tabstop = 4;
@@ -19,7 +16,6 @@
       relativenumber = true;
     };
   };
-
   programs.zsh.shellAliases = {
     nv = "nvim";
   };
