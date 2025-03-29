@@ -51,10 +51,6 @@
           "<leader>k" = "goto_prev";
           "<leader>j" = "goto_next";
         };
-        lspBuf = {
-          lr = "references";
-          li = "implementation";
-        };
       };
     };
     lspsaga = {

@@ -22,18 +22,6 @@
         # Prism Launcher
         "workspace 3, class:(PrismLauncher)$"
         "float, class:(PrismLauncher)$, title:(Prism Launcher 9.2)$"
-        "size 770 620, class:(PrismLauncher)$, title:(Prism Launcher 9.2)$"
-        "center, class:(PrismLauncher)$, title:(Prism Launcher 9.2)$"
-        "move, 887 200, class:(PrismLauncher)$, title:(Prism Launcher 9.2)$"
-
-        "float, class:(PrismLauncher)$, title:(Console window)$"
-        "size 770 620, class:(PrismLauncher)$, title:(Console window)$"
-        "center, class:(PrismLauncher)$, title:(Console window)$"
-        "move, 105 200, class:(PrismLauncher)$, title:(Console window)$"
-
-        # GTNH
-        "workspace 4, class:(GT: New Horizons 2.7.3)$"
-        "fullscreenstate:* 1, class:(GT: New Horizons 2.7.3)$"
 
         # Telegram
         "workspace 5 silent, class:(TelegramDesktop)$"

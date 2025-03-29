@@ -1,5 +1,15 @@
 {
   programs.nixvim.keymaps = [
+    {
+      mode = "n";
+      key = "h";
+      action = "h";
+    }
+    {
+      mode = "n";
+      key = "l";
+      action = "l";
+    }
     # Vim Surround
     {
       mode = "v";
@@ -47,6 +57,11 @@
       key = "<leader>ld";
       options.desc = "Lsp Goto Definition";
       action = "<cmd>Lspsaga goto_definition<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>lb";
+      action = "<cmd>lua vim.lsp.buf.references<CR>";
     }
 
     # Nvim neo tree
