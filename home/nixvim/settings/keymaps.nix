@@ -1,5 +1,6 @@
 {
   programs.nixvim.keymaps = [
+    # Fixes
     {
       mode = "n";
       key = "h";
@@ -10,16 +11,18 @@
       key = "l";
       action = "l";
     }
+
     # Vim Surround
     {
       mode = "v";
       key = "<leader>w";
-      action = "St";
+      action = "<S>st";
       options = {
         desc = "Wrap area";
         silent = true;
       };
     }
+
     # LspSaga
     {
       mode = "n";
@@ -68,12 +71,18 @@
       mode = "n";
       key = "<leader>ef";
       action = "<cmd>Neotree toggle float<CR>";
-      options.desc = "Open Nvim-Neo-Tree";
+      options.desc = "Open Nvim-Neo-Tree floating";
     }
     {
       mode = "n";
       key = "<leader>er";
       action = "<cmd>Neotree toggle position=right<CR>";
+      options.desc = "Open Nvim-Neo-Tree on the right";
+    }
+    {
+      mode = "n";
+      key = "<leader>ee";
+      action = "<cmd>Neotree<CR>";
       options.desc = "Open Nvim-Neo-Tree";
     }
 
@@ -614,7 +623,7 @@
     }
     {
       mode = "n";
-      key = ","; # русская точка в кириллице = английская запятая
+      key = ",";
       action = "?";
     }
   ];
