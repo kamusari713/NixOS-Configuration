@@ -20,7 +20,6 @@
         silent = true;
       };
     }
-
     # LspSaga
     {
       mode = "n";
@@ -285,6 +284,338 @@
       key = "L";
       action = "g_";
       options.desc = "Go to end of the line";
+    }
+
+    # Lang map
+    {
+      mode = "n";
+      key = "й";
+      action = "q";
+    }
+    {
+      mode = "n";
+      key = "ц";
+      action = "w";
+    }
+    {
+      mode = "n";
+      key = "у";
+      action = "e";
+    }
+    {
+      mode = "n";
+      key = "к";
+      action = "r";
+    }
+    {
+      mode = "n";
+      key = "е";
+      action = "t";
+    }
+    {
+      mode = "n";
+      key = "н";
+      action = "y";
+    }
+    {
+      mode = "n";
+      key = "г";
+      action = "u";
+    }
+    {
+      mode = "n";
+      key = "ш";
+      action = "i";
+    }
+    {
+      mode = "n";
+      key = "щ";
+      action = "o";
+    }
+    {
+      mode = "n";
+      key = "з";
+      action = "p";
+    }
+    {
+      mode = "n";
+      key = "х";
+      action = "[";
+    }
+    {
+      mode = "n";
+      key = "ъ";
+      action = "]";
+    }
+    {
+      mode = "n";
+      key = "ф";
+      action = "a";
+    }
+    {
+      mode = "n";
+      key = "ы";
+      action = "s";
+    }
+    {
+      mode = "n";
+      key = "в";
+      action = "d";
+    }
+    {
+      mode = "n";
+      key = "а";
+      action = "f";
+    }
+    {
+      mode = "n";
+      key = "п";
+      action = "g";
+    }
+    {
+      mode = "n";
+      key = "р";
+      action = "h";
+    }
+    {
+      mode = "n";
+      key = "о";
+      action = "j";
+    }
+    {
+      mode = "n";
+      key = "л";
+      action = "k";
+    }
+    {
+      mode = "n";
+      key = "д";
+      action = "l";
+    }
+    {
+      mode = "n";
+      key = "ж";
+      action = ";";
+    }
+    {
+      mode = "n";
+      key = "э";
+      action = "'";
+    }
+    {
+      mode = "n";
+      key = "я";
+      action = "z";
+    }
+    {
+      mode = "n";
+      key = "ч";
+      action = "x";
+    }
+    {
+      mode = "n";
+      key = "с";
+      action = "c";
+    }
+    {
+      mode = "n";
+      key = "м";
+      action = "v";
+    }
+    {
+      mode = "n";
+      key = "и";
+      action = "b";
+    }
+    {
+      mode = "n";
+      key = "т";
+      action = "n";
+    }
+    {
+      mode = "n";
+      key = "ь";
+      action = "m";
+    }
+    {
+      mode = "n";
+      key = "б";
+      action = ",";
+    }
+    {
+      mode = "n";
+      key = "ю";
+      action = ".";
+    }
+    {
+      mode = "n";
+      key = ".";
+      action = "/";
+    }
+    {
+      mode = "n";
+      key = "Й";
+      action = "Q";
+    }
+    {
+      mode = "n";
+      key = "Ц";
+      action = "W";
+    }
+    {
+      mode = "n";
+      key = "У";
+      action = "E";
+    }
+    {
+      mode = "n";
+      key = "К";
+      action = "R";
+    }
+    {
+      mode = "n";
+      key = "Е";
+      action = "T";
+    }
+    {
+      mode = "n";
+      key = "Н";
+      action = "Y";
+    }
+    {
+      mode = "n";
+      key = "Г";
+      action = "U";
+    }
+    {
+      mode = "n";
+      key = "Ш";
+      action = "I";
+    }
+    {
+      mode = "n";
+      key = "Щ";
+      action = "O";
+    }
+    {
+      mode = "n";
+      key = "З";
+      action = "P";
+    }
+    {
+      mode = "n";
+      key = "Х";
+      action = "{";
+    }
+    {
+      mode = "n";
+      key = "Ъ";
+      action = "}";
+    }
+    {
+      mode = "n";
+      key = "Ф";
+      action = "A";
+    }
+    {
+      mode = "n";
+      key = "Ы";
+      action = "S";
+    }
+    {
+      mode = "n";
+      key = "В";
+      action = "D";
+    }
+    {
+      mode = "n";
+      key = "А";
+      action = "F";
+    }
+    {
+      mode = "n";
+      key = "П";
+      action = "G";
+    }
+    {
+      mode = "n";
+      key = "Р";
+      action = "H";
+    }
+    {
+      mode = "n";
+      key = "О";
+      action = "J";
+    }
+    {
+      mode = "n";
+      key = "Л";
+      action = "K";
+    }
+    {
+      mode = "n";
+      key = "Д";
+      action = "L";
+    }
+    {
+      mode = "n";
+      key = "Ж";
+      action = ":";
+    }
+    {
+      mode = "n";
+      key = "Э";
+      action = ''"'';
+    }
+    {
+      mode = "n";
+      key = "Я";
+      action = "Z";
+    }
+    {
+      mode = "n";
+      key = "Ч";
+      action = "X";
+    }
+    {
+      mode = "n";
+      key = "С";
+      action = "C";
+    }
+    {
+      mode = "n";
+      key = "М";
+      action = "V";
+    }
+    {
+      mode = "n";
+      key = "И";
+      action = "B";
+    }
+    {
+      mode = "n";
+      key = "Т";
+      action = "N";
+    }
+    {
+      mode = "n";
+      key = "Ь";
+      action = "M";
+    }
+    {
+      mode = "n";
+      key = "Б";
+      action = "<";
+    }
+    {
+      mode = "n";
+      key = "Ю";
+      action = ">";
+    }
+    {
+      mode = "n";
+      key = ","; # русская точка в кириллице = английская запятая
+      action = "?";
     }
   ];
 }
