@@ -6,8 +6,7 @@
     ./emmet.nix
     ./fidget.nix
     ./indent-blankline.nix
-    ./java.nix
-    # ./lint.nix
+    ./lint.nix
     ./lsp.nix
     ./lualine.nix
     ./mini.nix
