@@ -57,7 +57,10 @@
         };
       };
     };
-    lspsaga.enable = true;
+    lspsaga = {
+      enable = true;
+      lightbulb.enable = false;
+    };
     lsp-format.enable = true;
     lsp-status.enable = true;
     lspkind = {
