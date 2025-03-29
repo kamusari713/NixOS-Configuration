@@ -174,6 +174,30 @@
     }
     {
       mode = "n";
+      key = "<M-+>";
+      action = "<C-w>+";
+      options.desc = "Resizing windows";
+    }
+    {
+      mode = "n";
+      key = "<M-->";
+      action = "<C-w>-";
+      options.desc = "Resizing windows";
+    }
+    {
+      mode = "n";
+      key = "<M->>";
+      action = "<C-w>>";
+      options.desc = "Resizing windows";
+    }
+    {
+      mode = "n";
+      key = "<M-<>";
+      action = "<C-w><";
+      options.desc = "Resizing windows";
+    }
+    {
+      mode = "n";
       key = "<leader>o";
       action = "o<Esc>k";
       options.desc = "Buffers";
