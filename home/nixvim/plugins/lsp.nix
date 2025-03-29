@@ -52,17 +52,14 @@
           "<leader>j" = "goto_next";
         };
         lspBuf = {
-          gd = "definition";
-          gD = "references";
-          gt = "type_definition";
-          gi = "implementation";
-          K = "hover";
-          "<F2>" = "rename";
+          lr = "references";
+          li = "implementation";
         };
       };
     };
-    lsp-format = { enable = true; };
-    lsp-status = { enable = true; };
+    lspsaga.enable = true;
+    lsp-format.enable = true;
+    lsp-status.enable = true;
     lspkind = {
       enable = true;
       cmp.menu = {

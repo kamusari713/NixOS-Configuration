@@ -17,9 +17,9 @@
   home.packages = with pkgs; [
     alejandra
     nixpkgs-fmt
+    deadnix
     prettierd
     nixfmt-classic
-    stylua
     vimPlugins.luasnip
   ];
 }
