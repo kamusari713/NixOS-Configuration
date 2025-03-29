@@ -3,7 +3,6 @@
     enable = true;
     settings = {
       formatters_by_ft = {
-        rust = [ "rustfmt" ];
         java = [ "google-java-format" ];
         nix = [ "nixfmt" ];
         markdown = [ "markdownfmt" ];

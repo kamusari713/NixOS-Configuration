@@ -4,7 +4,7 @@
       servers = let
         start-jdt-server = lib.getExe
           (pkgs.writeShellScriptBin "start-jdt-server"
-            "jdtls -data ./.jdt-data");
+            "jdtls -data ~/.jdt/.jdt-data");
       in {
         java_language_server = {
           enable = true;
@@ -16,7 +16,7 @@
 
     nvim-jdtls = {
       enable = true;
-      data = "./.jdt-data";
+      data = "~/.jdt/.jdt-data";
       settings.java = {
         gradle.enabled = true;
         maven.enabled = true;

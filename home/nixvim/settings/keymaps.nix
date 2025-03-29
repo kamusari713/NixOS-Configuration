@@ -68,13 +68,37 @@
 
     # Utility
     {
+      mode = "n";
       key = "<esc>";
       action = ":noh<CR>";
-      mode = "n";
       options = {
         silent = true;
         desc = "Clear search";
       };
+    }
+    {
+      mode = "n";
+      key = "<M-h>";
+      action = "<C-w>h";
+      options.desc = "Moving between windows";
+    }
+    {
+      mode = "n";
+      key = "<M-j>";
+      action = "<C-w>j";
+      options.desc = "Moving between windows";
+    }
+    {
+      mode = "n";
+      key = "<M-k>";
+      action = "<C-w>k";
+      options.desc = "Moving between windows";
+    }
+    {
+      mode = "n";
+      key = "<M-l>";
+      action = "<C-w>l";
+      options.desc = "Moving between windows";
     }
     {
       mode = "n";

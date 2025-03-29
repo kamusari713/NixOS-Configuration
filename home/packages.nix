@@ -21,7 +21,7 @@
     nodejs_23
 
     # Shit
-    vscode
+    jetbrains.idea-community
     pgmodeler
   ];
 }
