@@ -1,16 +1,18 @@
 {
-  programs.nixvim.plugins.treesitter = {
-    enable = true;
+  programs.nixvim.plugins = {
+    treesitter = {
+      enable = true;
 
-    settings = {
-      ensure_installed =
-        [ "nix" "java" "javascript" "html" "css" "python" "lua" ];
+      settings = {
+        ensure_installed = [ "nix" "javascript" "html" "css" "python" "lua" ];
 
-      sync_install = true;
+        sync_install = true;
 
-      highlight.enable = true;
+        highlight.enable = true;
 
-      indent.enable = true;
+        indent.enable = true;
+      };
     };
+    treesitter-textobjects.enable = true;
   };
 }
