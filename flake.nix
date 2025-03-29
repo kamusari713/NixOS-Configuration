@@ -1,7 +1,7 @@
 {
   description = "My nixos flake";
 
-  outputs = { nixpkgs, ... } @ inputs:
+  outputs = { nixpkgs, ... }@inputs:
     let
       system = "x86_64-linux";
 
@@ -10,15 +10,12 @@
         config.allowUnfree = true;
         config.allowBroken = true;
       };
-    in
-    {
+    in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         inherit pkgs;
         modules = [
-          {
-            _module.args = { inherit inputs; };
-          }
+          { _module.args = { inherit inputs; }; }
           inputs.hm.nixosModules.home-manager
           ./modules
         ];
@@ -26,10 +23,7 @@
       homeConfigurations.kamusari = inputs.hm.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
-        modules = [
-          inputs.stylix.homeManagerModules.stylix
-          ./home
-        ];
+        modules = [ inputs.stylix.homeManagerModules.stylix ./home ];
       };
     };
 
@@ -48,9 +42,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:danth/stylix/release-24.11";
-    };
+    stylix = { url = "github:danth/stylix/release-24.11"; };
 
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";

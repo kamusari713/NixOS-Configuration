@@ -8,7 +8,7 @@
         "$mainMod, M, exec, prismlauncher"
         "$mainMod, D, exec, vivaldi"
         "$mainMod, T, exec, telegram-desktop"
-				"$mainMod, S, exec, spotify"
+        "$mainMod, S, exec, spotify"
         "$mainMod, C, killactive"
 
         "$mainMod CTRL, P, exec, poweroff"

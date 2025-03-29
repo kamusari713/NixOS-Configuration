@@ -1,7 +1,7 @@
 {
   imports = [
     ./rofi
-    # ./tmux
+    ./tmux
     ./wayland
 
     ./fastfetch

@@ -3,15 +3,8 @@
     enable = true;
 
     settings = {
-      ensure_installed = [
-        "nix"
-        "java"
-        "javascript"
-        "html"
-        "css"
-        "python"
-        "lua"
-      ];
+      ensure_installed =
+        [ "nix" "java" "javascript" "html" "css" "python" "lua" ];
 
       sync_install = true;
 

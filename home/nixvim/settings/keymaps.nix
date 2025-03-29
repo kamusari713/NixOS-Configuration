@@ -177,13 +177,13 @@
     {
       mode = "v";
       key = "p";
-      action = "\"_dp";
+      action = ''"_dp'';
       options.desc = "Paste without saving in Visual mod";
     }
     {
       mode = "v";
       key = "P";
-      action = "\"_dP";
+      action = ''"_dP'';
       options.desc = "Paste without saving in Visual mode";
     }
     {

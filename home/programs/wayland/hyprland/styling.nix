@@ -15,19 +15,13 @@
       };
 
       # OpenGL settings
-      opengl = {
-        nvidia_anti_flicker = 0;
-      };
+      opengl = { nvidia_anti_flicker = 0; };
 
       # Debug settings
-      debug = {
-        damage_tracking = 0;
-      };
+      debug = { damage_tracking = 0; };
 
       # Cursor settings
-      cursor = {
-        no_hardware_cursors = true;
-      };
+      cursor = { no_hardware_cursors = true; };
 
       # General settings
       general = {
@@ -59,9 +53,7 @@
         preserve_split = true;
       };
 
-      master = {
-        new_status = "master";
-      };
+      master = { new_status = "master"; };
     };
   };
 }

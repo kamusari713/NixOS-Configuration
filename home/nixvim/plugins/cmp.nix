@@ -1,7 +1,4 @@
-{ pkgs
-, lib
-, ...
-}: {
+{ pkgs, lib, ... }: {
   programs.nixvim.plugins = {
     # Enable extra cmp sources
     cmp-emoji.enable = true;
@@ -18,32 +15,33 @@
         enable_autosnippets = true;
         store_selection_keys = "<Tab>";
       };
-      fromVscode = [
-        {
-          lazyLoad = true;
-          paths = "${pkgs.vimPlugins.friendly-snippets}";
-        }
-      ];
+      fromVscode = [{
+        lazyLoad = true;
+        paths = "${pkgs.vimPlugins.friendly-snippets}";
+      }];
     };
 
     cmp = {
       enable = true;
       settings = {
-        completion = {
-          completeopt = "menu,menuone,noinsert";
-        };
+        completion = { completeopt = "menu,menuone,noinsert"; };
 
         autoEnableSources = true;
 
-        snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
+        snippet.expand =
+          "function(args) require('luasnip').lsp_expand(args.body) end";
 
         experimental.ghost_text = false;
 
         mapping = {
-          "<C-k>" = "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
-          "<C-j>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
-          "<C-p>" = "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
-          "<C-n>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
+          "<C-k>" =
+            "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
+          "<C-j>" =
+            "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
+          "<C-p>" =
+            "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
+          "<C-n>" =
+            "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
           "<C-h>" = ''
             function()
               if cmp.visible_docs() then
@@ -58,7 +56,8 @@
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-e>" = "cmp.mapping.abort()";
           "<C-Esc>" = "cmp.mapping.close()";
-          "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
+          "<CR>" =
+            "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
           "<Tab>" = ''
             function(fallback)
               if cmp.visible() then
@@ -132,7 +131,8 @@
         window = {
           completion = {
             border = "rounded";
-            winhighlight = "Normal:Pmenu,CursorLine:PmenuSel,FloatBorder:FloatBorder,Search:None";
+            winhighlight =
+              "Normal:Pmenu,CursorLine:PmenuSel,FloatBorder:FloatBorder,Search:None";
             col_offset = -3;
             side_padding = 1;
             scrollbar = false;
@@ -154,9 +154,7 @@
             name = "custom";
             selection_order = "top_down";
           };
-          docs = {
-            auto_open = false;
-          };
+          docs = { auto_open = false; };
         };
       };
     };

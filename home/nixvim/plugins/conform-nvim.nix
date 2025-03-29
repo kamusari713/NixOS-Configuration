@@ -8,19 +8,11 @@
         nix = [ "nixfmt" ];
         markdown = [ "markdownfmt" ];
         css = [ "stylelint" ];
-        "_" = [
-          "squeeze_blanks"
-          "trim_whitespace"
-          "trim_newlines"
-        ];
+        "_" = [ "squeeze_blanks" "trim_whitespace" "trim_newlines" ];
       };
-      default_format_opts = {
-        lsp_format = "fallback";
-      };
+      default_format_opts = { lsp_format = "fallback"; };
       notify_no_formatters = true;
-      format_on_save = {
-        timeout_ms = 2000;
-      };
+      format_on_save = { timeout_ms = 2000; };
     };
   };
 }

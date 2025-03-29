@@ -1,14 +1,9 @@
-{ config
-, lib
-, modulesPath
-, ...
-}: {
-  imports = [
-    (modulesPath + "/installer/scan/not-detected.nix")
-  ];
+{ config, lib, modulesPath, ... }: {
+  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot = {
-    initrd.availableKernelModules = [ "xhci_pci" "nvme" "usbhid" "usb_storage" "sd_mod" "rtsx_usb_sdmmc" ];
+    initrd.availableKernelModules =
+      [ "xhci_pci" "nvme" "usbhid" "usb_storage" "sd_mod" "rtsx_usb_sdmmc" ];
     initrd.kernelModules = [ ];
     kernelModules = [ "kvm-intel" ];
     extraModulePackages = [ ];
@@ -25,12 +20,12 @@
     options = [ "fmask=0077" "dmask=0077" ];
   };
 
-  swapDevices = [
-    { device = "/dev/disk/by-uuid/4fcffee0-2139-423c-b55c-0a926adc7e60"; }
-  ];
+  swapDevices =
+    [{ device = "/dev/disk/by-uuid/4fcffee0-2139-423c-b55c-0a926adc7e60"; }];
 
   networking.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.intel.updateMicrocode =
+    lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

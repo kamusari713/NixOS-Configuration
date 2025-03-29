@@ -6,8 +6,6 @@
     baseIndex = 1;
     clock24 = true;
 
-    plugins = with pkgs.tmuxPlugins; [
-      gruvbox
-    ];
+    plugins = with pkgs.tmuxPlugins; [ gruvbox ];
   };
 }

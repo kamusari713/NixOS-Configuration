@@ -1,20 +1,14 @@
-let
-  flakeDir = "~/nixos-config";
-in
-{
+let flakeDir = "~/nixos-config";
+in {
   programs = {
-    bash = {
-      enable = true;
-    };
+    bash = { enable = true; };
 
     zsh = {
       enable = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       enableCompletion = true;
-      history = {
-        size = 1000;
-      };
+      history = { size = 1000; };
 
       oh-my-zsh = {
         enable = true;
@@ -25,7 +19,8 @@ in
       shellAliases = {
         rb = "sudo nixos-rebuild switch --flake ${flakeDir} --impure";
         upd = "nix flake update ${flakeDir} --impure";
-        upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir} --impure";
+        upg =
+          "sudo nixos-rebuild switch --upgrade --flake ${flakeDir} --impure";
         hms = "home-manager switch --flake ${flakeDir} --impure";
         ngc = "sudo nix-collect-garbage -d";
 

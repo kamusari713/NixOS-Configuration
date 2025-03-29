@@ -7,35 +7,35 @@
 /* #d3869b */
 
 * {
-  border: none;
-  border-radius: 0px;
-  min-height: 0;
-  min-width: 0;
-  font-family: "JetBrainsMono";
-  font-size: 16px;
-  font-weight: 800;
+	border: none;
+	border-radius: 0px;
+	min-height: 0;
+	min-width: 0;
+	font-family: "JetBrainsMono";
+	font-size: 16px;
+	font-weight: 800;
 }
 
 window#waybar {
-  background-color: #282828;
-  border-bottom: 5px solid #d5c4a1;
+	background-color: #282828;
+	border-bottom: 5px solid #d5c4a1;
 }
 
 #workspaces button {
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  color: #b8bb26;
-  border-bottom: 7px solid #b8bb26;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	color: #b8bb26;
+	border-bottom: 7px solid #b8bb26;
 }
 
 #workspaces button.active {
-  color: #282828;
-  background-color: #b8bb26;
+	color: #282828;
+	background-color: #b8bb26;
 }
 
 #workspaces button:hover {
-  color: #282828;
-  background-color: #b8bb26;
+	color: #282828;
+	background-color: #b8bb26;
 }
 
 #window,
@@ -45,43 +45,43 @@ window#waybar {
 #language,
 #clock,
 #tray {
-  margin: 0;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  border-radius: 0;
+	margin: 0;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-radius: 0;
 }
 
 #window {
-  color: #d3869b;
-  border-bottom: 7px solid #d3869b;
+	color: #d3869b;
+	border-bottom: 7px solid #d3869b;
 }
 
 #network {
-  color: #9d0006;
-  border-bottom: 7px solid #9d0006;
+	color: #9d0006;
+	border-bottom: 7px solid #9d0006;
 }
 
 #battery {
-  color: #b94306;
-  border-bottom: 7px solid #b94306;
+	color: #b94306;
+	border-bottom: 7px solid #b94306;
 }
 
 #custom-weather {
-  color: #e3a526;
-  border-bottom: 7px solid #e3a526;
+	color: #e3a526;
+	border-bottom: 7px solid #e3a526;
 }
 
 #language {
-  color: #85a03b;
-  border-bottom: 7px solid #85a03b;
+	color: #85a03b;
+	border-bottom: 7px solid #85a03b;
 }
 
 #clock {
-  color: #277680;
-  border-bottom: 7px solid #277680;
+	color: #277680;
+	border-bottom: 7px solid #277680;
 }
 
 #tray {
-  color: #8f4373;
-  border-bottom: 7px solid #8f4373;
+	color: #8f4373;
+	border-bottom: 7px solid #8f4373;
 }

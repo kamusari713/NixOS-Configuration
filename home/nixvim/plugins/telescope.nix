@@ -6,11 +6,7 @@
       live-grep-args.enable = true;
     };
     settings = {
-      pickers = {
-        find_files = {
-          hiden_files = true;
-        };
-      };
+      pickers = { find_files = { hiden_files = true; }; };
       defaults = {
         file_ignore_patterns = [
           "^.git/"

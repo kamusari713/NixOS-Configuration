@@ -1,10 +1,5 @@
-{ inputs
-, pkgs
-, ...
-}: {
-  imports = [
-    inputs.stylix.homeManagerModules.stylix
-  ];
+{ inputs, pkgs, ... }: {
+  imports = [ inputs.stylix.homeManagerModules.stylix ];
 
   home.packages = with pkgs; [
     jetbrains-mono
@@ -32,7 +27,7 @@
       nixvim.enable = false;
       hyprland.enable = false;
     };
-    image = ./girl-1.png;
+    image = ./roronoa-zoro-gruvbox.jpg;
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";

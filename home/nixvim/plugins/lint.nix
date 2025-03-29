@@ -7,10 +7,6 @@
       nix = [ "deadnix" ];
       css = [ "stylelint" ];
     };
-    linters = {
-      checkstyle = {
-        config_file = "/google_checks.xml";
-      };
-    };
+    linters = { checkstyle = { config_file = "/google_checks.xml"; }; };
   };
 }

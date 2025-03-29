@@ -13,7 +13,16 @@
         html.enable = true; # HTML
         emmet_ls = {
           enable = true;
-          filetypes = [ "html" "css" "scss" "javascript" "javascriptreact" "typescript" "typescriptreact" "vue" ];
+          filetypes = [
+            "html"
+            "css"
+            "scss"
+            "javascript"
+            "javascriptreact"
+            "typescript"
+            "typescriptreact"
+            "vue"
+          ];
         };
         volar = {
           enable = true; # Vue
@@ -52,12 +61,8 @@
         };
       };
     };
-    lsp-format = {
-      enable = true;
-    };
-    lsp-status = {
-      enable = true;
-    };
+    lsp-format = { enable = true; };
+    lsp-status = { enable = true; };
     lspkind = {
       enable = true;
       cmp.menu = {

@@ -4,11 +4,7 @@
     keyboards = {
       default = {
         ids = [ "*" ];
-        settings = {
-          main = {
-            capslock = "overload(meta, esc)";
-          };
-        };
+        settings.main.capslock = "overload(meta, esc)";
       };
     };
   };

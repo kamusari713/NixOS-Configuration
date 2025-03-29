@@ -1,7 +1,1 @@
-{
-  imports = [
-    ./mongod.nix
-    ./postgresql.nix
-    ./redis.nix
-  ];
-}
+{ imports = [ ./mongod.nix ./postgresql.nix ./redis.nix ]; }

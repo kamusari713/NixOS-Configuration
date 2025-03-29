@@ -4,108 +4,92 @@
 
     style = pkgs.lib.readFile ./style.css;
     systemd.enable = true;
-    settings = [
-      {
-        layer = "top";
-        position = "top";
-        height = 30;
+    settings = [{
+      layer = "top";
+      position = "top";
+      height = 30;
 
-        modules-left = [
-          "hyprland/workspaces"
-        ];
-        modules-center = [
-          "hyprland/window"
-        ];
-        modules-right = [
-          # "network"
-          # "battery"
-          "custom/weather"
-          "hyprland/language"
-          "clock"
-          "tray"
-        ];
+      modules-left = [ "hyprland/workspaces" ];
+      modules-center = [ "hyprland/window" ];
+      modules-right = [
+        # "network"
+        # "battery"
+        "custom/weather"
+        "hyprland/language"
+        "clock"
+        "tray"
+      ];
 
-        "hyprland/workspaces" = {
-          "on-click" = "activate";
-          format = "{id}";
-          "all-outputs" = true;
-          "disable-scroll" = false;
-          "active-only" = false;
+      "hyprland/workspaces" = {
+        "on-click" = "activate";
+        format = "{id}";
+        "all-outputs" = true;
+        "disable-scroll" = false;
+        "active-only" = false;
+      };
+
+      "hyprland/window" = { format = "{title}"; };
+
+      "hyprland/language" = {
+        format-en = "en";
+        format-ru = "RU";
+        tooltip = false;
+      };
+
+      "custom/weather" = {
+        format = " {} ";
+        exec = "curl -s 'wttr.in/Астрахань?format=%c%t'";
+        interval = 300;
+        class = "weather";
+      };
+
+      battery = {
+        interval = 2;
+        states = {
+          warning = 25;
+          critical = 15;
         };
+        format = "{icon}{capacity: >3}%";
+        "format-charging" = " {capacity}%";
+        "format-plugged" = " {capacity}%";
+        "format-full" = " {icon}{capacity}%";
+        "format-icons" = [ "" "" "" "" "" ];
+      };
 
-        "hyprland/window" = {
-          format = "{title}";
-        };
+      network = {
+        "format-wifi" = "{essid}";
+        "format-ethernet" = "{ifname}: {ipaddr}/{cidr}";
+        "format-linked" = "{ifname} (No IP)";
+        "format-disconnected" = "Disconnected";
+        "format-alt" = "{ifname}: {ipaddr}/{cidr}";
+      };
 
-        "hyprland/language" = {
-          format-en = "en";
-          format-ru = "RU";
-          tooltip = false;
+      pulseaudio = {
+        format = "{icon}  {volume}%";
+        "format-muted" = " Muted";
+        "format-icons" = {
+          headphone = "";
+          "hands-free" = "";
+          headset = "";
+          phone = "";
+          portable = "";
+          car = "";
+          default = [ "" "" "" ];
         };
+        "on-click" = "pavucontrol";
+      };
 
-        "custom/weather" = {
-          format = " {} ";
-          exec = "curl -s 'wttr.in/Астрахань?format=%c%t'";
-          interval = 300;
-          class = "weather";
-        };
+      tray = {
+        "show-passive-items" = true;
+        spacing = 10;
+      };
 
-        battery = {
-          interval = 2;
-          states = {
-            warning = 25;
-            critical = 15;
-          };
-          format = "{icon}{capacity: >3}%";
-          "format-charging" = " {capacity}%";
-          "format-plugged" = " {capacity}%";
-          "format-full" = " {icon}{capacity}%";
-          "format-icons" = [
-            ""
-            ""
-            ""
-            ""
-            ""
-          ];
-        };
-
-        network = {
-          "format-wifi" = "{essid}";
-          "format-ethernet" = "{ifname}: {ipaddr}/{cidr}";
-          "format-linked" = "{ifname} (No IP)";
-          "format-disconnected" = "Disconnected";
-          "format-alt" = "{ifname}: {ipaddr}/{cidr}";
-        };
-
-        pulseaudio = {
-          format = "{icon}  {volume}%";
-          "format-muted" = " Muted";
-          "format-icons" = {
-            headphone = "";
-            "hands-free" = "";
-            headset = "";
-            phone = "";
-            portable = "";
-            car = "";
-            default = [
-              ""
-              ""
-              ""
-            ];
-          };
-          "on-click" = "pavucontrol";
-        };
-
-        tray = {
-          "show-passive-items" = true;
-          spacing = 10;
-        };
-
-        clock = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        };
-      }
-    ];
+      clock = {
+        format = "{:%d.%m.%Y - %H:%M}";
+        tooltip-format = ''
+          <big>{:%Y %B}</big>
+          <tt><small>{calendar}</small></tt>'';
+      };
+    }];
   };
 }

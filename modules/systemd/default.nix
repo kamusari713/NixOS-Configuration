@@ -1,7 +1,5 @@
 {
-  imports = [
-    ./amnezia.nix
-  ];
+  imports = [ ./amnezia.nix ];
 
   systemd.services = {
     "getty@tty1".enable = false;

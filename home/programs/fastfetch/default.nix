@@ -8,13 +8,9 @@
         width = 40;
         height = 16;
       };
-      display = {
-        separator = " ➜  ";
-      };
+      display = { separator = " ➜  "; };
       modules = [
-        {
-          type = "break";
-        }
+        { type = "break"; }
         {
           type = "os";
           key = "OS   ";
@@ -36,9 +32,7 @@
           key = " └  ";
           keyColor = "white";
         }
-        {
-          type = "break";
-        }
+        { type = "break"; }
         {
           type = "wm";
           key = "WM   ";
@@ -69,9 +63,7 @@
           key = " └  ";
           keyColor = "blue";
         }
-        {
-          type = "break";
-        }
+        { type = "break"; }
         {
           type = "board";
           key = "PC   ";
@@ -106,23 +98,17 @@
         }
         {
           type = "monitor";
-          format = "{2}x{3}px {6}\" {11}GHz";
+          format = ''{2}x{3}px {6}" {11}GHz'';
           key = " └  ";
           keyColor = "red";
         }
-        {
-          type = "break";
-        }
+        { type = "break"; }
         {
           type = "colors";
           paddingLeft = 4;
         }
-        {
-          type = "break";
-        }
-        {
-          type = "break";
-        }
+        { type = "break"; }
+        { type = "break"; }
       ];
     };
   };
