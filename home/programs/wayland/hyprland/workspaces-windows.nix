@@ -19,9 +19,9 @@
         "center, class:(spotify)"
         "size, 1000 700, class:(spotify)"
 
-        # Prism Launcher
-        "workspace 3, class:(PrismLauncher)$"
-        "float, class:(PrismLauncher)$, title:(Prism Launcher 9.2)$"
+        # Freesmlauncher
+        "workspace 3, class:(Freesmlauncher)$"
+        "float, class:(Freesmlauncher)$"
 
         # Telegram
         "workspace 5 silent, class:(TelegramDesktop)$"

@@ -1,7 +1,7 @@
 {
   description = "My nixos flake";
 
-  outputs = { nixpkgs, ... }@inputs:
+  outputs = { nixpkgs, freesmlauncher, ... }@inputs:
     let
       system = "x86_64-linux";
 
@@ -56,6 +56,11 @@
 
     nixvim = {
       url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    freesmlauncher = {
+      url = "github:FreesmTeam/FreesmLauncher";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

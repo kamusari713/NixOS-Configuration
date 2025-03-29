@@ -5,7 +5,7 @@
 
       bind = [
         "$mainMod, Q, exec, kitty"
-        "$mainMod, M, exec, prismlauncher"
+        "$mainMod, M, exec, freesmlauncher"
         "$mainMod, D, exec, vivaldi"
         "$mainMod, T, exec, telegram-desktop"
         "$mainMod, S, exec, spotify"

@@ -1,9 +1,9 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
   home.packages = with pkgs; [
     # Social and etc ...
     amnezia-vpn
     vivaldi
-    prismlauncher
+    inputs.freesmlauncher.packages.${pkgs.system}.freesmlauncher
     telegram-desktop
 
     # LibreOffice
