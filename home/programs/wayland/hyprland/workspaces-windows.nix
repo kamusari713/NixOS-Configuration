@@ -19,9 +19,9 @@
         "center, class:(spotify)"
         "size, 1000 700, class:(spotify)"
 
-        # Freesmlauncher
-        "workspace 3, class:(Freesmlauncher)$"
-        "float, class:(Freesmlauncher)$"
+        # FreesmLauncher
+        "workspace 3, class:(FreesmLauncher)$"
+        "float, class:(FreesmLauncher)$"
 
         # Telegram
         "workspace 5 silent, class:(TelegramDesktop)$"
