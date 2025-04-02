@@ -106,7 +106,6 @@
         };
 
         sources = [
-          # { name = "copilot"; }
           {
             name = "nvim_lsp";
             entry_filter.__raw = ''
@@ -159,64 +158,4 @@
       };
     };
   };
-  # cmp = {
-  #   enable = true;
-  #   settings = {
-  #     completion = {
-  #       completeopt = "menu,menuone,noinsert";
-  #     };
-  #     autoEnableSources = true;
-  #     experimental = { ghost_text = true; };
-  #     performance = {
-  #       debounce = 60;
-  #       fetchingTimeout = 200;
-  #       maxViewEntries = 30;
-  #     };
-  #     formatting = { fields = [ "kind" "abbr" "menu" ]; };
-  #     sources = [
-  #       {
-  #         name = "nvim_lsp";
-  #         priority = 100;
-  #       }
-  #       {
-  #         name = "emmet";
-  #         priority = 100;
-  #       }
-  #       { name = "emoji"; }
-  #       {
-  #         name = "buffer"; # text within current buffer
-  #         option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
-  #         keywordLength = 3;
-  #       }
-  #       {
-  #         name = "path"; # file system paths
-  #         keywordLength = 3;
-  #       }
-  #       {
-  #         name = "luasnip"; # snippets
-  #         keywordLength = 3;
-  #       }
-  #     ];
-
-  #     snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
-
-  #     window = {
-  #       completion = { border = "solid"; };
-  #       documentation = { border = "solid"; };
-  #     };
-
-  #     mapping = {
-  #       "<A-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-  #       "<C-n>" = "cmp.mapping.select_next_item()";
-  #       "<C-p>" = "cmp.mapping.select_prev_item()";
-  #       "<C-Tab>" = "cmp.mapping.select_prev_item()";
-  #       "<C-e>" = "cmp.mapping.abort()";
-  #       "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-  #       "<C-f>" = "cmp.mapping.scroll_docs(4)";
-  #       "<C-Space>" = "cmp.mapping.complete()";
-  #       "<Tab>" = "cmp.mapping.confirm({ select = true })";
-  #       "<S-Tab>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
-  #     };
-  #   };
-  # };
 }

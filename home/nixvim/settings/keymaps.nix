@@ -174,6 +174,30 @@
     }
     {
       mode = "n";
+      key = "<C-H>";
+      action = "<cmd>WinShift left<CR>";
+      options.desc = "Moving windows";
+    }
+    {
+      mode = "n";
+      key = "<C-J>";
+      action = "<cmd>WinShift down<CR>";
+      options.desc = "Moving windows";
+    }
+    {
+      mode = "n";
+      key = "<C-K>";
+      action = "<cmd>WinShift up<CR>";
+      options.desc = "Moving windows";
+    }
+    {
+      mode = "n";
+      key = "<C-L>";
+      action = "<cmd>WinShift right<CR>";
+      options.desc = "Moving windows";
+    }
+    {
+      mode = "n";
       key = "<M-+>";
       action = "<C-w>+";
       options.desc = "Resizing windows";
@@ -482,11 +506,6 @@
     }
     {
       mode = "n";
-      key = ".";
-      action = "/";
-    }
-    {
-      mode = "n";
       key = "Й";
       action = "Q";
     }
@@ -644,11 +663,6 @@
       mode = "n";
       key = "Ю";
       action = ">";
-    }
-    {
-      mode = "n";
-      key = ",";
-      action = "?";
     }
   ];
 }

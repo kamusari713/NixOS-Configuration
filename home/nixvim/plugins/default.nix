@@ -4,6 +4,7 @@
     ./colorizer.nix
     ./conform-nvim.nix
     ./emmet.nix
+    ./extraPlugins.nix
     ./fidget.nix
     ./indent-blankline.nix
     ./lsp.nix
