@@ -198,7 +198,7 @@
     }
     {
       mode = "n";
-      key = "<M-+>";
+      key = "<M-=>";
       action = "<C-w>+";
       options.desc = "Resizing windows";
     }
@@ -210,13 +210,13 @@
     }
     {
       mode = "n";
-      key = "<M->>";
+      key = "<M-.>";
       action = "<C-w>>";
       options.desc = "Resizing windows";
     }
     {
       mode = "n";
-      key = "<M-<>";
+      key = "<M-,>";
       action = "<C-w><";
       options.desc = "Resizing windows";
     }
