@@ -141,6 +141,18 @@
     # Utility
     {
       mode = "n";
+      key = "<C-i>";
+      action = "<C-o>";
+      options.desc = "Replace goto next";
+    }
+    {
+      mode = "n";
+      key = "<C-o>";
+      action = "<C-i>";
+      options.desc = "Replace goto prev";
+    }
+    {
+      mode = "n";
       key = "<esc>";
       action = ":noh<CR>";
       options = {
@@ -210,13 +222,13 @@
     }
     {
       mode = "n";
-      key = "<M-.>";
+      key = "<M-,>";
       action = "<C-w>>";
       options.desc = "Resizing windows";
     }
     {
       mode = "n";
-      key = "<M-,>";
+      key = "<M-.>";
       action = "<C-w><";
       options.desc = "Resizing windows";
     }
