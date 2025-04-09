@@ -57,13 +57,13 @@
     {
       mode = "n";
       key = "<leader>l";
-      action = "<cmd>Lspsaga diagnostic_jump_next";
+      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options.desc = "Lsp go to next diagnostic";
     }
     {
       mode = "n";
       key = "<leader>h";
-      action = "<cmd>Lspsaga diagnostic_jump_prev";
+      action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
       options.desc = "Lsp go to prev diagnotic";
     }
     {
