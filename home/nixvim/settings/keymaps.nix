@@ -56,6 +56,18 @@
     }
     {
       mode = "n";
+      key = "<leader>l";
+      action = "<cmd>Lspsaga diagnostic_jump_next";
+      options.desc = "Lsp go to next diagnostic";
+    }
+    {
+      mode = "n";
+      key = "<leader>h";
+      action = "<cmd>Lspsaga diagnostic_jump_prev";
+      options.desc = "Lsp go to prev diagnotic";
+    }
+    {
+      mode = "n";
       key = "<leader>ld";
       options.desc = "Lsp Goto Definition";
       action = "<cmd>Lspsaga goto_definition<CR>";

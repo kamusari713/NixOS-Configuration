@@ -44,14 +44,7 @@
         # java_language_server.enable = true; # Java
         # kotlin_language_server.enable = true; # Kotlin
       };
-      keymaps = {
-        silent = true;
-        diagnostic = {
-          # Navigate in diagnostics
-          "<leader>k" = "goto_prev";
-          "<leader>j" = "goto_next";
-        };
-      };
+      keymaps.silent = true;
     };
     lspsaga = {
       enable = true;
