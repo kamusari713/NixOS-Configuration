@@ -266,7 +266,7 @@
     {
       mode = "n";
       key = "<leader>s";
-      action = "<cmd>w<CR>";
+      action = "<cmd>wall<CR>";
       options.desc = "Buffers";
     }
     {
