@@ -15,6 +15,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./ts-autotag.nix
+    ./typescript-tools.nix
     ./visual-multi.nix
   ];
 

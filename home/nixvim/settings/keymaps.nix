@@ -1,5 +1,12 @@
 {
   programs.nixvim.keymaps = [
+    # Typescript tools
+    {
+      mode = "n";
+      key = "<leader>i";
+      action = "<cmd>TSToolsOrganizeImports<cr>";
+      options = { desc = "Organize Imports"; };
+    }
     # Fixes
     {
       mode = "n";

@@ -4,6 +4,8 @@
     settings = {
       formatters_by_ft = {
         java = [ "google-java-format" ];
+        javascript = [ "prettierd" ];
+        typescript = [ "prettierd" ];
         nix = [ "nixfmt" ];
         markdown = [ "markdownfmt" ];
         css = [ "stylelint" ];
@@ -11,7 +13,7 @@
       };
       default_format_opts = { lsp_format = "fallback"; };
       notify_no_formatters = true;
-      format_on_save = { timeout_ms = 2000; };
+      format_on_save = { timeout_ms = 1000; };
     };
   };
 }
