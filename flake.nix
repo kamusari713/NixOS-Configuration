@@ -11,14 +11,27 @@
         config.allowBroken = true;
       };
     in {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
-        inherit pkgs;
-        modules = [
-          { _module.args = { inherit inputs; }; }
-          inputs.hm.nixosModules.home-manager
-          ./modules
-        ];
+      nixosConfigurations = {
+        desktop = nixpkgs.lib.nixosSystem {
+          inherit system;
+          inherit pkgs;
+          modules = [
+            { _module.args = { inherit inputs; }; }
+            inputs.hm.nixosModules.home-manager
+            ./modules
+            ./hosts/desktop
+          ];
+        };
+        laptop = nixpkgs.lib.nixosSystem {
+          inherit system;
+          inherit pkgs;
+          modules = [
+            { _module.args = { inherit inputs; }; }
+            inputs.hm.nixosModules.home-manager
+            ./modules
+            ./hosts/laptop
+          ];
+        };
       };
       homeConfigurations.kamusari = inputs.hm.lib.homeManagerConfiguration {
         inherit pkgs;

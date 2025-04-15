@@ -1,13 +1,9 @@
 {
   imports = [
-    ./desktop
-    # ./laptop
-
     ./services
     ./systemd
 
     ./boot.nix
-    ./hardware.nix
     ./home-manager.nix
     ./networking.nix
     ./packages.nix
