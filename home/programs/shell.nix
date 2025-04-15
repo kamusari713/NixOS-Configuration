@@ -17,12 +17,11 @@ in {
       };
 
       shellAliases = {
-        rb = "sudo nixos-rebuild switch --flake ${flakeDir}#desktop --impure";
-        rbl = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop --impure";
-        upd = "nix flake update ${flakeDir} --impure";
-        upg =
-          "sudo nixos-rebuild switch --upgrade --flake ${flakeDir} --impure";
-        hms = "home-manager switch --flake ${flakeDir} --impure";
+        rb = "sudo nixos-rebuild switch --flake ${flakeDir}#desktop";
+        rbl = "sudo nixos-rebuild switch --flake ${flakeDir}#laptop";
+        upd = "nix flake update ${flakeDir}";
+        upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
+        hms = "home-manager switch --flake ${flakeDir}";
         ngc = "sudo nix-collect-garbage -d";
 
         cls = "clear";
