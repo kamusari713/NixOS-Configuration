@@ -1,8 +1,1 @@
-{
-  imports = [
-    ./hardware-configuration.nix
-    ./hardware.nix
-    ./networking.nix
-    ./xserver.nix
-  ];
-}
+{ imports = [ ./hardware-configuration.nix ./hardware.nix ./xserver.nix ]; }
