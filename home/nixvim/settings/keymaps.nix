@@ -173,7 +173,7 @@
     {
       mode = "n";
       key = "<esc>";
-      action = ":noh<CR>";
+      action = "<cmd>noh<CR>";
       options = {
         silent = true;
         desc = "Clear search";
@@ -271,7 +271,7 @@
     }
     {
       mode = "n";
-      key = "<leader>A";
+      key = "<leader>a";
       action = "ggVG";
       options.desc = "Buffers";
     }
