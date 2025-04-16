@@ -13,6 +13,9 @@
       windowrulev2 = [
         # Browser
         "workspace 1, class:(vivaldi)$"
+        "float, class:(vivaldi)$ title(developer tools)$"
+        "size, 520 950, class:(vivaldi)$ title(developer tools)$"
+        "at, 2040 350, class:(vivaldi)$ title(developer tools)$"
 
         # Spotify
         "float, class:(spotify)"

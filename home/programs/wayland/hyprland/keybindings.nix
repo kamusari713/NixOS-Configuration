@@ -5,11 +5,12 @@
 
       bind = [
         "$mainMod, Q, exec, kitty"
-        "$mainMod, M, exec, freesmlauncher"
-        "$mainMod, D, exec, vivaldi"
+        "$mainMod, W, exec, pavucontrol"
+        "$mainMod, E, exec, idea-community"
         "$mainMod, T, exec, telegram-desktop"
         "$mainMod, S, exec, spotify"
-        "$mainMod, C, killactive"
+        "$mainMod, D, exec, vivaldi"
+        "$mainMod, M, exec, freesmlauncher"
 
         "$mainMod CTRL, P, exec, poweroff"
         "$mainMod CTRL, R, exec, reboot"
@@ -18,9 +19,10 @@
         "$mainMod SHIFT, S, exec, hyprshot -m region --clipboard-only -z"
         "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
 
-        "$mainMod, F, togglefloating"
         "$mainMod, P, fullscreen"
+        "$mainMod, F, togglefloating"
         "$mainMod, G, togglesplit"
+        "$mainMod, C, killactive"
 
         "$mainMod, h, movefocus, l"
         "$mainMod, j, movefocus, d"
