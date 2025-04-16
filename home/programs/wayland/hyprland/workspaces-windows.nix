@@ -12,10 +12,10 @@
 
       windowrulev2 = [
         # Browser
-        "workspace 1, class:(vivaldi)$"
-        "float, class:(vivaldi)$ title(developer tools)$"
-        "size, 520 950, class:(vivaldi)$ title(developer tools)$"
-        "at, 2040 350, class:(vivaldi)$ title(developer tools)$"
+        "workspace 1, class:(vivaldi-stable)$"
+        "float, class:(vivaldi-stable)$, title:(Developer Tools)$"
+        "size, 520 950, class:(vivaldi-stable)$, title:(Developer Tools)$"
+        "move, 2040 350, class:(vivaldi-stable)$, title:(Developer Tools)$"
 
         # Spotify
         "float, class:(spotify)"
@@ -59,7 +59,7 @@
       blurls = [ "waybar" "rofi" ];
 
       layerrule = [
-        "blur,logout"
+        "blur, logout"
         "xray 0, notifications"
         "animation slide, notifications"
       ];
