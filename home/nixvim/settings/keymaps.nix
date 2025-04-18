@@ -271,6 +271,12 @@
     }
     {
       mode = "n";
+      key = "<leader>g";
+      action = "<cmd>lua vim.lsp.buf.format()<CR>";
+      options.desc = "Format file";
+    }
+    {
+      mode = "n";
       key = "<leader>a";
       action = "ggVG";
       options.desc = "Buffers";
