@@ -26,8 +26,12 @@
       nvim-autopairs.enable = true;
 
       noice.enable = true;
+
       noice.settings.presets."inc_rename" = true;
-      inc-rename.enable = true; # Nice renaming UI
+
+      inc-rename.enable = true;
+
+      java.enable = true;
 
       vim-surround.enable = true;
 
